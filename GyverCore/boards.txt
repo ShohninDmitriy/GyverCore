@@ -73,6 +73,13 @@ nano.menu.clock.external_16.build.f_cpu=16000000L
 nano.menu.clock.external_16.bootloader.suffix=atmega328
 nano.menu.clock.external_16.upload.speed={speeds.US16MHZ}
 
+nano.menu.clock.external_20=External 20 MHz
+nano.menu.clock.external_20.fuses.CKDIV8=1
+nano.menu.clock.external_20.fuses.CKSEL=111111
+nano.menu.clock.external_20.build.f_cpu=20000000L
+nano.menu.clock.external_20.bootloader.suffix=atmega328
+nano.menu.clock.external_20.upload.speed={speeds.US16MHZ}
+
 nano.menu.clock.external_8=External 8 MHz
 nano.menu.clock.external_8.fuses.CKDIV8=1
 nano.menu.clock.external_8.fuses.CKSEL=111111
@@ -113,7 +120,7 @@ nano.menu.serial.gyverUart.extra_flags.uart=-D_GYVERCORE_GYVERUART
 ## COMPILER ##
 menu.compiler_version=Compiler version
 
-nano.menu.compiler_version.avrgcc5=AVR-GCC v5.4.0 [Default]
+nano.menu.compiler_version.avrgcc5=AVR-GCC v5.4 or 7.3 [Default]
 nano.menu.compiler_version.avrgcc5.compiler.path={runtime.tools.avr-gcc.path}/bin/
 nano.menu.compiler_version.avrgcc8=AVR-GCC v8.3.0 [Warning!]
 nano.menu.compiler_version.avrgcc8.compiler.path={runtime.platform.path}/tools/avr-gcc/bin/
@@ -166,19 +173,3 @@ nano.menu.co.disabled.fuses.CKOUT=1
 
 nano.menu.co.enabled=Enable [Warning!]
 nano.menu.co.enabled.fuses.CKOUT=0
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
